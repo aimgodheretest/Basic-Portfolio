@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+.banner {
+  position: relative;
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px;
+  background: #fff;
+  transition: 0.5s;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+.logo {
+  text-decoration: none;
+  color: rgb(75, 74, 74);
+  font-size: 40px;
+  font-weight: 400;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+ul {
+  display: flex;
+  gap: 40px;
+}
+li {
+  list-style: none;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(75, 74, 74);
+  font-size: 30px;
+  transition: 0.5s;
+}
+.content {
+  position: relative;
+  max-width: 700px;
+}
+.content h2 {
+  font-size: 4.5em;
+  font-weight: 400;
+  color: rgb(75, 74, 74);
+  transition: 0.5s;
+}
+h2 span {
+  color: rgba(247, 233, 49, 0.8);
+}
+p {
+  font-size: 1.2em;
+  color: rgb(75, 74, 74);
+  margin: 10px 0;
+  transition: 0.5s;
+}
+button {
+  position: relative;
+  background-color: rgba(247, 233, 49, 0.8);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  color: rgb(75, 74, 74);
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#chat {
+  background: transparent;
+  color: rgb(75, 74, 74);
+}
+.dayNight {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(212, 212, 213);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.dayNight ion-icon:nth-child(2),
+.banner.night .dayNight ion-icon:nth-child(1) {
+  display: none;
+}
+.banner.night .dayNight ion-icon:nth-child(2) {
+  display: block;
+}
+.banner.night {
+  background-color: rgb(14, 14, 14);
+}
+.banner.night .dayNight {
+  color: #fff;
+  background-color: #444;
+}
+
+.banner.night .logo,
+.banner.night .content h2,
+.banner.night p,
+.banner.night a {
+  color: #fff;
+}
